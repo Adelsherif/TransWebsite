@@ -25,6 +25,46 @@ body[dir="ltr"] {
     width: 90%;
     margin: auto;
 }
+.top-nav {
+  background: #111;
+  color: #fff;
+  font-size: 14px;
+  padding: 8px 0;
+}
+
+.top-nav .container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
+}
+
+.top-nav .contact-info span {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.top-nav .social-links a {
+  color: #fff;
+  margin-left: 12px;
+  transition: 0.3s;
+}
+
+.top-nav .social-links a:hover {
+  color: #00aced;
+}
+
+@media (max-width: 600px) {
+  .top-nav .container {
+    flex-direction: column;
+    gap: 6px;
+    text-align: center;
+  }
+}
+
 nav{
     position: sticky;
     top: 0;
